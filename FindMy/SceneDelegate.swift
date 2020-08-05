@@ -23,7 +23,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     func setupEntryViewController() {
         let mapViewController = MapViewController()
-        self.window?.rootViewController = mapViewController
+        let navigationController = UINavigationController(rootViewController: mapViewController)
+        navigationController.isNavigationBarHidden = true
+        navigationController.isToolbarHidden = false
+        self.window?.rootViewController = navigationController
         self.window?.makeKeyAndVisible()
     }
 

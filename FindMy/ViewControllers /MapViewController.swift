@@ -11,7 +11,7 @@ import MapKit
 class MapViewController: UIViewController {
     
     // MARK: - UI Elements
-    var mapView = MKMapView()
+    var mapView = MapView()
     var optionOverlay = OptionOverlay()
 
     override func viewDidLoad() {
